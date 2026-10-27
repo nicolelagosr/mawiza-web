@@ -187,3 +187,30 @@ thead th { border-bottom: 2px solid var(--tinta); }
 .check { display: flex; gap: 12px; align-items: flex-start; font-size: 14px; line-height: 20px; cursor: pointer; }
 .checkout-footer { border-top: 1px solid var(--linea); padding: 24px 40px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 24px; font-size: 13px; color: var(--tinta-tenue); }
 .tema-papel .price { color: var(--tinta); }
+
+/* v2: carrusel de merch, discografía, contacto, fechas */
+.merch-home { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 48px 64px; align-items: center; }
+.carousel { display: flex; flex-direction: column; gap: 16px; }
+.carousel-frame { position: relative; aspect-ratio: 4 / 5; background: var(--fondo-carbon); overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.carousel-frame > img { width: 100%; height: 100%; object-fit: cover; }
+.arrow { position: absolute; top: 50%; transform: translateY(-50%); width: 48px; height: 48px; background: #000; color: #fff; border: 1px solid var(--trama); cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.arrow-prev { left: 12px; } .arrow-next { right: 12px; }
+.carousel-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+.carousel-foot a { display: flex; flex-direction: column; gap: 2px; text-decoration: none; padding: 4px 0; }
+.dots { display: flex; align-items: center; gap: 4px; }
+.dots button { width: 32px; height: 44px; padding: 0; background: transparent; border: 0; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.dots button span { width: 24px; height: 4px; display: block; background: var(--trama); }
+.dots button[aria-current="true"] span { background: var(--oro); }
+.placeholder { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.placeholder img { width: 72px !important; height: auto !important; opacity: 0.25; object-fit: contain !important; }
+.albums { list-style: none; margin: 0; padding: 0; }
+.albums li { display: flex; gap: 20px; align-items: center; padding: 16px 0; border-bottom: 1px solid var(--trama); }
+.cover { width: 96px; height: 96px; object-fit: cover; flex: none; }
+.cover-empty { width: 96px; height: 96px; flex: none; background: var(--fondo); border: 1px solid var(--trama); display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; color: var(--tinta-tenue); }
+.platforms { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 8px; }
+.contacts { list-style: none; margin: 0; padding: 0; width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 16px; }
+.contacts li { border: 1px solid var(--trama); padding: 24px 16px; display: flex; flex-direction: column; gap: 8px; align-items: center; }
+.contacts a { padding: 10px 0; }
+.empty-box { border: 1px solid var(--trama); padding: 48px 24px; display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; }
+.thumb-empty { flex: none; background: var(--fondo); border: 1px solid var(--trama); }
+.mz-card-img, .mz-card-img:hover { text-decoration: none; }
